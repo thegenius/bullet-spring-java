@@ -40,6 +40,16 @@ project_structure = [
     {item_path = "{{ context.project }}.core",                                                             item_file = "build.gradle",     item_tmpl = "core_build.gradle.tmpl", item_type = "static"},
 
     # dal
+    {item_path = "{{ context.project }}.dal.common.src.jooq.java.{{context.group}}.{{context.project}}.dal.common.generated.tables.daos",           item_file = "EntityBasicInfoDao.java",            item_tmpl = "dal_common_EntityBasicInfoDao.java.tmpl", item_type = "static"},
+    {item_path = "{{ context.project }}.dal.common.src.jooq.java.{{context.group}}.{{context.project}}.dal.common.generated.tables.pojos",           item_file = "EntityBasicInfo.java",            item_tmpl = "dal_common_EntityBasicInfo.java.tmpl", item_type = "static"},
+    {item_path = "{{ context.project }}.dal.common.src.jooq.java.{{context.group}}.{{context.project}}.dal.common.generated.tables.records",           item_file = "EntityBasicInfoRecord.java",            item_tmpl = "dal_common_EntityBasicInfoRecord.java.tmpl", item_type = "static"},
+
+    {item_path = "{{ context.project }}.dal.common.src.jooq.java.{{context.group}}.{{context.project}}.dal.common.generated.tables",           item_file = "EntityBasicInfo.java",            item_tmpl = "dal_common_tables_EntityBasicInfo.java.tmpl", item_type = "static"},
+    {item_path = "{{ context.project }}.dal.common.src.jooq.java.{{context.group}}.{{context.project}}.dal.common.generated",           item_file = "DefaultCatalog.java",            item_tmpl = "dal_common_DefaultCatalog.java.tmpl", item_type = "static"},
+    {item_path = "{{ context.project }}.dal.common.src.jooq.java.{{context.group}}.{{context.project}}.dal.common.generated",           item_file = "DefaultSchema.java",            item_tmpl = "dal_common_DefaultSchema.java.tmpl", item_type = "static"},
+    {item_path = "{{ context.project }}.dal.common.src.jooq.java.{{context.group}}.{{context.project}}.dal.common.generated",           item_file = "Indexes.java",            item_tmpl = "dal_common_Indexes.java.tmpl", item_type = "static"},
+    {item_path = "{{ context.project }}.dal.common.src.jooq.java.{{context.group}}.{{context.project}}.dal.common.generated",           item_file = "Keys.java",            item_tmpl = "dal_common_Keys.java.tmpl", item_type = "static"},
+    {item_path = "{{ context.project }}.dal.common.src.jooq.java.{{context.group}}.{{context.project}}.dal.common.generated",           item_file = "Tables.java",            item_tmpl = "dal_common_Tables.java.tmpl", item_type = "static"},
     {item_path = "{{ context.project }}.dal.common.src.main.java.{{context.group}}.{{context.project}}.dal",           item_file = "EntityBasicInfoRepository.java",            item_tmpl = "dal_common_EntityBasicInfoRepository.java.tmpl", item_type = "static"},
     {item_path = "{{ context.project }}.dal.common.src.main.java.{{context.group}}.{{context.project}}.dal.helper",    item_file = "EntityBasicInfoHelper.java",                item_tmpl = "dal_common_EntityBasicInfoHelper.java.tmpl", item_type = "static"},
     {item_path = "{{ context.project }}.dal.common.src.main.java.{{context.group}}.{{context.project}}.dal.jooq",      item_file = "EntityBasicInfoRepositoryJooqImpl.java",    item_tmpl = "dal_common_EntityBasicInfoRepositoryJooqImpl.java.tmpl", item_type = "static"},

@@ -13,6 +13,12 @@
 2. cargo bullet build --name=bullet-spring-java -output=.
 ```
 
+### usage
+```text
+gradle build
+java -jar ./biz/build/libs/biz-1.0.jar
+```
+
 ### component
 ```text
 1. spring boot
